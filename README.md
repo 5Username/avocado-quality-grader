@@ -4,8 +4,37 @@
 
 Upload a photo of your harvest → Get a **1-5 Quality Score** + actionable tip in seconds.
 
-**Price:** KES 50 per photo analysis  
-**Target:** 100 photos/day = **KES 150,000 / month**
+### New Affordable Pricing (Kenya-friendly)
+| Package | Photos | Price | Per photo |
+|---------|--------|-------|-----------|
+| Starter | 20 | KES 150 | KES 7.5 |
+| Standard | 50 | KES 300 | KES 6 |
+| **Best value** | **100** | **KES 500** | **KES 5** |
+
+---
+
+## Make it Live (GitHub Pages) – Do this now
+
+1. Go to: https://github.com/5Username/avocado-quality-grader
+2. Click **Settings** → left sidebar **Pages**
+3. Under **Source** choose **Deploy from a branch**
+4. Branch: `main` / folder: `/ (root)`
+5. Click **Save**
+
+Your live site will be ready in 1–2 minutes at:  
+**https://5Username.github.io/avocado-quality-grader/**
+
+---
+
+## WhatsApp Version (Highest Adoption in Kenya)
+Most farmers prefer WhatsApp.  
+The site already has WhatsApp buttons.  
+Replace the phone number `254700000000` with your real WhatsApp Business number.
+
+Flow:
+1. Farmer sends photo on WhatsApp
+2. You (or bot) reply with score + tip
+3. Or use the web app for self-service
 
 ---
 
@@ -13,7 +42,7 @@ Upload a photo of your harvest → Get a **1-5 Quality Score** + actionable tip 
 Farmers lose money when processors reject batches for defects that are hard to see with the naked eye (uneven ripening, subtle bruising, color issues).
 
 ## The Solution
-A simple web tool that analyses avocado photos for:
+Simple web + WhatsApp tool that analyses avocado photos for:
 - Color uniformity
 - Surface defects / bruising
 - Ripeness indicators
@@ -22,42 +51,31 @@ Gives a clear score + tip so farmers can sort, price, or hold better.
 
 ---
 
-## Live Demo
-Open `index.html` or deploy to GitHub Pages / Netlify / Vercel.
-
 ## Tech Stack (MVP)
-- Pure HTML + CSS + Vanilla JS (no backend needed for basic version)
-- Client-side image analysis (Canvas API for color + simple defect detection)
-- Ready for upgrade to Grok Vision / custom model later
-- Payment: M-Pesa ready (add STK push)
+- Pure HTML + CSS + Vanilla JS
+- Client-side analysis (demo)
+- Ready for Grok Vision upgrade
+- M-Pesa ready (add Daraja STK later)
 
-## Business Model
+## Business Model (Updated)
 | Metric | Value |
 |--------|-------|
-| Price per photo | KES 50 |
-| Break-even | ~30 photos/day |
-| Target | 100 photos/day |
-| Monthly revenue | KES 150,000 |
-| Cost structure | Near-zero (static hosting + optional AI credits) |
+| Best package | 100 photos for KES 500 |
+| Effective price | KES 5 per photo |
+| Target | 200–300 photos/day possible with coops |
+| Monthly potential | KES 30k – 150k+ |
 
 ### Go-to-Market
-1. Target avocado cooperatives in Murang'a, Kiambu, Meru, Baringo, Trans Nzoia, Uasin Gishu
-2. Partner with exporters / processors (they can white-label)
-3. WhatsApp / Telegram bot version (high adoption in Kenya)
-4. X (Twitter) campaigns targeting #KenyaAgriculture #AvocadoKenya
+1. Target cooperatives in Murang'a, Kiambu, Meru, Baringo, Trans Nzoia, Uasin Gishu
+2. Partner with exporters / processors
+3. **WhatsApp first** (highest conversion)
+4. X campaigns in Kiswahili + English
 
-## How to Monetize with Current Tools
-- **GitHub**: Host the code + GitHub Pages for free demo
-- **Grok AI**: Use for advanced analysis (upload photo in chat) or train better prompts
-- **Gmail**: Automated payment confirmations + weekly farmer reports
-- **X**: Organic + paid promotion to farmer groups and agri-influencers
-
-## Next Steps to Make Money Fast
-1. Deploy this page live
-2. Add M-Pesa Lipa Na M-Pesa / STK (use Daraja API)
-3. Create WhatsApp Business flow (most farmers prefer it)
-4. Run targeted X ads + posts in Kiswahili/English
-5. Offer bulk packages to cooperatives (KES 40/photo for 50+)
+## Tools Integration
+- **GitHub**: Code + free hosting (Pages)
+- **Grok AI**: Advanced analysis + this system
+- **Gmail**: Payment receipts + reports
+- **X**: Customer acquisition
 
 ---
 
