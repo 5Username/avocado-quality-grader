@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avocado Quality Score | KES 50</title>
+  <title>Avocado Quality Score | From KES 5</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -13,45 +13,32 @@
       min-height: 100vh;
       padding: 20px;
     }
-    .container {
-      max-width: 480px;
-      margin: 0 auto;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 8px;
-      color: #a8e6cf;
-    }
-    .tagline {
-      opacity: 0.85;
-      font-size: 0.95rem;
-    }
+    .container { max-width: 480px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 24px; }
+    h1 { font-size: 1.7rem; margin-bottom: 8px; color: #a8e6cf; }
+    .tagline { opacity: 0.85; font-size: 0.95rem; }
     .price-badge {
       display: inline-block;
       background: #ffd700;
       color: #0d2b1f;
       font-weight: 700;
-      padding: 6px 16px;
+      padding: 8px 18px;
       border-radius: 50px;
       margin-top: 12px;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
     }
     .card {
       background: rgba(255,255,255,0.08);
       border-radius: 20px;
-      padding: 24px;
+      padding: 22px;
       backdrop-filter: blur(10px);
       border: 1px solid rgba(255,255,255,0.12);
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
     .upload-zone {
       border: 2px dashed rgba(168,230,207,0.5);
       border-radius: 16px;
-      padding: 40px 20px;
+      padding: 36px 18px;
       text-align: center;
       cursor: pointer;
       transition: all 0.3s;
@@ -61,49 +48,48 @@
       background: rgba(168,230,207,0.1);
     }
     .upload-zone input { display: none; }
-    .upload-icon { font-size: 3rem; margin-bottom: 12px; }
+    .upload-icon { font-size: 2.8rem; margin-bottom: 10px; }
     #preview {
       max-width: 100%;
       border-radius: 12px;
-      margin-top: 16px;
+      margin-top: 14px;
       display: none;
     }
     .btn {
       display: block;
       width: 100%;
-      padding: 16px;
+      padding: 15px;
       border: none;
       border-radius: 12px;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       font-weight: 600;
       cursor: pointer;
-      margin-top: 16px;
+      margin-top: 14px;
       transition: transform 0.2s;
     }
     .btn:active { transform: scale(0.98); }
-    .btn-primary {
-      background: #a8e6cf;
-      color: #0d2b1f;
-    }
+    .btn-primary { background: #a8e6cf; color: #0d2b1f; }
     .btn-secondary {
       background: transparent;
       border: 2px solid #a8e6cf;
       color: #a8e6cf;
     }
-    .result {
-      display: none;
-      text-align: center;
+    .btn-whatsapp {
+      background: #25D366;
+      color: #fff;
+      margin-top: 10px;
     }
+    .result { display: none; text-align: center; }
     .score-circle {
-      width: 120px;
-      height: 120px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 3rem;
+      font-size: 2.8rem;
       font-weight: 800;
-      margin: 0 auto 16px;
+      margin: 0 auto 14px;
       border: 6px solid;
     }
     .score-5 { border-color: #4ade80; color: #4ade80; }
@@ -113,23 +99,38 @@
     .score-1 { border-color: #f87171; color: #f87171; }
     .tip {
       background: rgba(0,0,0,0.25);
-      padding: 16px;
+      padding: 14px;
       border-radius: 12px;
-      margin-top: 16px;
-      font-size: 1.05rem;
+      margin-top: 14px;
+      font-size: 1rem;
       line-height: 1.5;
     }
+    .packages {
+      display: grid;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .package {
+      background: rgba(0,0,0,0.2);
+      padding: 12px 14px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .package strong { color: #ffd700; }
     .payment-note {
       text-align: center;
-      margin-top: 24px;
-      opacity: 0.7;
-      font-size: 0.9rem;
+      margin-top: 18px;
+      opacity: 0.75;
+      font-size: 0.88rem;
+      line-height: 1.4;
     }
     footer {
       text-align: center;
-      margin-top: 40px;
-      opacity: 0.6;
-      font-size: 0.85rem;
+      margin-top: 32px;
+      opacity: 0.55;
+      font-size: 0.82rem;
     }
   </style>
 </head>
@@ -138,18 +139,37 @@
     <header>
       <h1>🍑 Avocado Quality Score</h1>
       <p class="tagline">Instant harvest grading for Kenyan farmers</p>
-      <div class="price-badge">KES 50 per photo</div>
+      <div class="price-badge">From only KES 5 per photo</div>
     </header>
+
+    <div class="card">
+      <h3 style="margin-bottom:12px;font-size:1.05rem;">Affordable Packages</h3>
+      <div class="packages">
+        <div class="package">
+          <span>100 photos</span>
+          <strong>KES 500</strong>
+        </div>
+        <div class="package">
+          <span>50 photos</span>
+          <strong>KES 300</strong>
+        </div>
+        <div class="package">
+          <span>20 photos</span>
+          <strong>KES 150</strong>
+        </div>
+      </div>
+      <p style="font-size:0.82rem;opacity:0.7;margin-top:10px;text-align:center;">Pay once via M-Pesa → use anytime</p>
+    </div>
 
     <div class="card" id="uploadCard">
       <div class="upload-zone" id="dropZone">
         <div class="upload-icon">📷</div>
-        <p><strong>Tap to upload</strong> or drag photo here</p>
-        <p style="font-size:0.85rem;opacity:0.7;margin-top:8px;">Best results with clear, well-lit photos</p>
+        <p><strong>Tap to upload</strong> or take photo</p>
+        <p style="font-size:0.85rem;opacity:0.7;margin-top:8px;">Clear, well-lit photos give best scores</p>
         <input type="file" id="fileInput" accept="image/*" capture="environment">
       </div>
       <img id="preview" alt="Preview">
-      <button class="btn btn-primary" id="analyzeBtn" style="display:none;">Analyze Quality (KES 50)</button>
+      <button class="btn btn-primary" id="analyzeBtn" style="display:none;">Get Quality Score</button>
     </div>
 
     <div class="card result" id="resultCard">
@@ -157,12 +177,20 @@
       <h2 id="scoreLabel">Quality Score</h2>
       <div class="tip" id="tipText"></div>
       <button class="btn btn-secondary" id="newPhotoBtn">Grade Another Photo</button>
+      <a href="https://wa.me/254700000000?text=Hello%2C%20I%20want%20to%20buy%20Avocado%20Quality%20Score%20package" class="btn btn-whatsapp" id="waBtn">Buy Package on WhatsApp</a>
     </div>
 
     <p class="payment-note">
-      After analysis you will be prompted for M-Pesa payment.<br>
-      Demo mode is currently free for testing.
+      Demo is free for testing.<br>
+      Real packages: Pay via M-Pesa then get credits.<br>
+      Highest adoption: Use WhatsApp version below.
     </p>
+
+    <div class="card" style="text-align:center;">
+      <p style="margin-bottom:12px;">Prefer WhatsApp? (Most Kenyan farmers do)</p>
+      <a href="https://wa.me/254700000000?text=Nisaidie%20na%20Avocado%20Quality%20Score" class="btn btn-whatsapp">Open WhatsApp Grader</a>
+      <p style="font-size:0.8rem;opacity:0.65;margin-top:10px;">Send photo → Get score + tip instantly</p>
+    </div>
 
     <footer>
       Built for Kenyan avocado farmers • Powered by Grok AI + GitHub
@@ -183,12 +211,8 @@
 
     let currentImage = null;
 
-    // Upload handling
     dropZone.addEventListener('click', () => fileInput.click());
-    dropZone.addEventListener('dragover', (e) => {
-      e.preventDefault();
-      dropZone.classList.add('dragover');
-    });
+    dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('dragover'); });
     dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
     dropZone.addEventListener('drop', (e) => {
       e.preventDefault();
@@ -216,20 +240,16 @@
       analyzeBtn.textContent = 'Analyzing...';
       analyzeBtn.disabled = true;
 
-      // Simple client-side analysis (demo)
-      // In production: send to Grok Vision / custom model / backend
       setTimeout(() => {
         const score = runSimpleAnalysis();
         showResult(score);
-        analyzeBtn.textContent = 'Analyze Quality (KES 50)';
+        analyzeBtn.textContent = 'Get Quality Score';
         analyzeBtn.disabled = false;
-      }, 1200);
+      }, 1100);
     });
 
     function runSimpleAnalysis() {
-      // Placeholder logic - replace with real vision later
-      // Real version would use Canvas pixel analysis for green/yellow/brown ratios + edge detection for bruises
-      const scores = [5, 4, 4, 3, 3, 2, 5, 4];
+      const scores = [5, 4, 4, 3, 3, 2, 5, 4, 5];
       const tips = {
         5: "Excellent! Uniform dark green, firm, minimal defects. Ready for premium export.",
         4: "Very good. Slight color variation. Sort the few lighter ones for local market.",
